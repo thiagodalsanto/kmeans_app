@@ -27,10 +27,10 @@ class KMeans:
                 self.image_dimensions = i
 
     def run(self):
-        if os.path.exists('../results'):
-            shutil.rmtree('../results')
+        if os.path.exists('results/'):
+            shutil.rmtree('results/')
         else:
-            os.makedirs('../results')
+            os.makedirs('results/')
 
         for k in range(1, self.centroid + 1):
             criteria_for_stop = (cv2.TERM_CRITERIA_EPS + cv2.TERM_CRITERIA_MAX_ITER, 80, 0.25)
@@ -40,7 +40,7 @@ class KMeans:
             centroid_image = centers[labels.flatten()]
             centroid_image = centroid_image.reshape(self.image.shape)
 
-            output_filename = os.path.join('../results', f'centroid_{k}.jpg')
+            output_filename = os.path.join('results/', f'centroid_{k}.jpg')
             cv2.imwrite(output_filename, centroid_image)
 
         cv2.waitKey(5)

@@ -1,5 +1,5 @@
 import tkinter as tk
-from config.config_file_frame import ConfigFileFrame
+from config.configuration import Configuration
 from utils.kmeans_utils import KMeansUtils
 
 class Frame:
@@ -73,7 +73,7 @@ class Frame:
 
 
     def open_file(self):
-        config_file_frame = ConfigFileFrame(self.frame_image, self.label_original_image)
+        config_file_frame = Configuration(self.frame_image, self.label_original_image)
         config_file_frame.open_file()
 
         self.label_original_image = config_file_frame.label_original_image

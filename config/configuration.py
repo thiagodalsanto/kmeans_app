@@ -3,7 +3,7 @@ import tkinter as tk
 import cv2
 from PIL import Image, ImageTk
 
-class ConfigFileFrame:
+class Configuration:
     def __init__(self, frame_image, label_original_image):
         self.frame_image = frame_image
         self.image_path = None

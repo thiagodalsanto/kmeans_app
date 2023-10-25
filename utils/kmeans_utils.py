@@ -12,7 +12,7 @@ class KMeansUtils:
     def apply_kmeans_on_images(self):
         KMeans(self.original_image, self.dimensions_variable.get(), self.clusters_variables.get())
 
-        images_directory = '../results'
+        images_directory = 'results/'
         image_files = os.listdir(images_directory)
         image_files = [os.path.join(images_directory, file) for file in image_files if file.endswith('.jpg')]
         
