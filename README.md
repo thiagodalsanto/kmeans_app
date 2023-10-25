@@ -1,6 +1,6 @@
 ## Projeto Bimestral (Processamento Digital de Imagens - PDI )
 
-Este repositório contém um projeto para aplicação de KMeans em imagens através da biblioteca OpenCV e Python. Após a aplicação do KMeans, é possível fazer a visualização de todos os centróides (clusters) gerados pelo KMeans, e compara-los com a imagem original, da mesma forma que escolher multiplas configurações de dimensões e centróides, para atingir o objetivo esperado.
+Este repositório contém um projeto para calcular e aplicar KMeans em imagens através da biblioteca OpenCV e Python. Após o calculo e aplicação do KMeans, é possível fazer a visualização de todos os centróides (clusters) gerados pelo KMeans, e compara-los com a imagem original, da mesma forma que escolher multiplas configurações de dimensões e centróides, para atingir o objetivo esperado.
 
 ## Sobre o trabalho:
 
@@ -11,7 +11,7 @@ Este repositório contém um projeto para aplicação de KMeans em imagens atrav
 ## Recursos 
 - **Escolha de Dimensões:** O usuário pode escolher a quantidade de dimensões que serão utilizadas pelo KMeans.
 - **Escolha de Centróides:** O usuário pode escolher a quantidade de clusters que serão utilizadas pelo KMeans.
-- **Aplicação do KMeans:** KMeans aplicado automáticamente na aplicação, apenas com as duas configurações necessárias anteriores.
+- **Aplicação do KMeans:** KMeans calculado e aplicado automáticamente na aplicação, apenas com as duas configurações necessárias anteriores.
 - **Visualização de Centróides:** O usuário pode visualizar a imagem original ao lado de cada um dos centróides gerados pelo KMeans.
 
 ## Dependências
